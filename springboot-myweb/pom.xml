@@ -6,19 +6,16 @@
 		<version>2.7.8</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.douzone</groupId>
 	<artifactId>springboot-myweb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	
+	<packaging>war</packaging>
 	<properties>
 		<project.build.soruceEncoding>UTF-8</project.build.soruceEncoding>
 		<project.build.outputEncoking></project.build.outputEncoking>
 		<java.version>17</java.version>
 	</properties>
-	
 	<dependencies>
 		<!-- Spring Boot Basic Dependency -->
 		<dependency>
@@ -36,9 +33,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- jstl -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<!-- Tomcat jasper -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+		</dependency>
 	</dependencies>
 	<build>
-		
 		<finalName>springboot-myweb</finalName>
 		<plugins>
 			<plugin>
